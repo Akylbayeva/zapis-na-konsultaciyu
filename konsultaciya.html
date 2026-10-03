@@ -1,0 +1,1161 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Консультация по привлечению финансирования</title>
+<meta name="description" content="Запись на консультацию по привлечению финансирования: онлайн или вживую в Астане. Свободное время, состав консультации, онлайн-оплата и напоминание.">
+<meta name="theme-color" content="#10303A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --petrol:#10303A;
+  --petrol-2:#173F4B;
+  --petrol-3:#245361;
+  --bg:#F5F7F6;
+  --mint:#D8EAE3;
+  --mint-2:#C4DFD4;
+  --amber:#F0B13A;
+  --amber-2:#E39F1F;
+  --green:#1F7A55;
+  --green-soft:#E3F2EB;
+  --ink:#10303A;
+  --muted:#4F6870;
+  --line:#D4DEDA;
+  --white:#FFFFFF;
+  --danger:#B3261E;
+  --radius:16px;
+  --radius-sm:10px;
+  --shadow:0 1px 2px rgba(16,48,58,.06),0 8px 24px rgba(16,48,58,.08);
+  --f-head:"Unbounded",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --f-body:"Golos Text",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55;overflow-x:hidden}
+h1,h2,h3{font-family:var(--f-head);font-weight:600;line-height:1.2;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(1.4rem,4.6vw,2rem)}
+h3{font-size:1.05rem}
+p{margin:0}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+[hidden]{display:none!important}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:3px solid var(--amber);outline-offset:2px;border-radius:6px}
+
+/* Кнопки */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 22px;border-radius:999px;border:2px solid transparent;font-weight:600;font-size:1rem;text-decoration:none;text-align:center;transition:background-color .15s,border-color .15s,transform .15s}
+.btn-primary{background:var(--amber);color:var(--petrol)}
+.btn-primary:hover{background:var(--amber-2)}
+.btn-primary:disabled,.btn-primary[aria-disabled="true"]{background:#E7DDC8;color:#7C7462;cursor:not-allowed}
+.btn-ghost{background:transparent;color:var(--white);border-color:rgba(255,255,255,.35)}
+.btn-ghost:hover{border-color:var(--white)}
+.btn-outline{background:var(--white);color:var(--petrol);border-color:var(--petrol)}
+.btn-outline:hover{background:var(--mint)}
+.btn-link{background:none;border:none;padding:10px 4px;min-height:44px;color:var(--petrol);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.btn-block{width:100%}
+
+/* Первый экран */
+.hero{background:var(--petrol);color:var(--white);padding:16px 0 48px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-180px;top:-120px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(216,234,227,.12),transparent 65%);pointer-events:none}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:56px;position:relative;z-index:1}
+.brand{display:flex;flex-direction:column;line-height:1.25}
+.brand b{font-family:var(--f-head);font-weight:600;font-size:.95rem}
+.brand span{font-size:.82rem;color:#A9C4BD}
+.topbar .btn{min-height:44px;padding:8px 16px;font-size:.92rem}
+.hero-grid{display:grid;gap:28px;margin-top:28px;position:relative;z-index:1}
+.kicker{display:inline-block;font-size:.8rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--amber);margin-bottom:14px}
+.hero h1{font-size:clamp(1.75rem,7vw,3.1rem);font-weight:700}
+.hero-sub{margin-top:16px;font-size:1.08rem;color:#CFE0DA;max-width:36em}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.hero-facts{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:22px;font-size:.92rem;color:#A9C4BD;padding:0;list-style:none}
+.hero-facts li::before{content:"✓";color:var(--amber);margin-right:6px;font-weight:700}
+
+.nearest{background:var(--white);color:var(--ink);border-radius:20px;padding:20px;box-shadow:0 20px 50px rgba(0,0,0,.25);align-self:start}
+.nearest-head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.nearest-title{display:flex;align-items:center;gap:8px;font-weight:600;font-size:.95rem}
+.pulse{width:10px;height:10px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px rgba(31,122,85,.18)}
+.nearest-body{margin:18px 0 16px}
+.nearest-date{font-family:var(--f-head);font-size:1.45rem;font-weight:600}
+.nearest-time{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:6px;color:var(--muted)}
+.nearest-time strong{color:var(--green);font-size:1.15rem}
+.nearest-note{font-size:.85rem;color:var(--muted);margin-top:10px}
+
+/* Переключатели формата */
+.seg{display:inline-flex;background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:3px}
+.seg button{min-height:38px;padding:6px 14px;border-radius:999px;border:none;background:transparent;font-weight:600;font-size:.9rem;color:var(--muted)}
+.seg button[aria-pressed="true"]{background:var(--petrol);color:var(--white)}
+
+/* Секции */
+section{padding:56px 0}
+.section-head{max-width:640px;margin-bottom:28px}
+.section-head p{margin-top:10px;color:var(--muted)}
+.eyebrow{display:block;font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--green);margin-bottom:10px}
+
+.outcomes{display:grid;gap:12px;list-style:none;padding:0;margin:0;counter-reset:o}
+.outcomes li{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:18px 18px 18px 64px;position:relative;counter-increment:o}
+.outcomes li::before{content:counter(o);position:absolute;left:18px;top:18px;width:32px;height:32px;border-radius:50%;background:var(--mint);color:var(--petrol);font-family:var(--f-head);font-weight:600;font-size:.9rem;display:grid;place-items:center}
+.outcomes b{display:block;font-weight:600;margin-bottom:4px}
+.outcomes span{color:var(--muted);font-size:.95rem}
+
+.formats{display:grid;gap:16px}
+.fcard{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:16px}
+.fcard.is-featured{border:2px solid var(--petrol)}
+.formats>*{min-width:0}
+.fcard-top{display:flex;flex-wrap:wrap-reverse;justify-content:space-between;align-items:flex-start;gap:8px 12px}
+.fcard-top>div{flex:1 1 200px;min-width:0}
+.badge{display:inline-block;font-size:.78rem;font-weight:600;padding:4px 10px;border-radius:999px;background:var(--mint);color:var(--petrol);white-space:nowrap}
+.fcard h3{font-size:1.15rem}
+.fcard-meta{color:var(--muted);font-size:.95rem}
+.price{font-family:var(--f-head);font-size:1.7rem;font-weight:700}
+.price small{font-family:var(--f-body);font-size:.9rem;font-weight:500;color:var(--muted);margin-left:6px}
+.incl{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.incl li{position:relative;padding-left:28px;font-size:.96rem}
+.incl li::before{content:"";position:absolute;left:0;top:4px;width:18px;height:18px;border-radius:50%;background:var(--green-soft) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 10.5l3 3 7-7' fill='none' stroke='%231F7A55' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/12px no-repeat}
+.fcard .btn{margin-top:auto}
+
+/* Запись */
+.booking{background:var(--mint)}
+.booking .section-head{margin-bottom:20px}
+.fmt-switch{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:18px}
+.fmt-switch button{min-height:64px;padding:10px 12px;border-radius:14px;border:2px solid var(--mint-2);background:rgba(255,255,255,.55);text-align:left;display:flex;flex-direction:column;gap:2px}
+.fmt-switch button b{font-weight:600}
+.fmt-switch button span{font-size:.85rem;color:var(--muted)}
+.fmt-switch button[aria-pressed="true"]{background:var(--white);border-color:var(--petrol)}
+.steps{display:flex;gap:6px;list-style:none;padding:0;margin:0 0 14px;counter-reset:s}
+.steps li{flex:1;counter-increment:s;font-size:.82rem;font-weight:600;color:var(--muted);display:flex;align-items:center;gap:8px;padding-bottom:8px;border-bottom:3px solid var(--mint-2)}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:26px;height:26px;flex:none;border-radius:50%;background:var(--white);font-size:.8rem}
+.steps li[aria-current="step"]{color:var(--petrol);border-color:var(--petrol)}
+.steps li[aria-current="step"]::before{background:var(--petrol);color:var(--white)}
+.steps li.done{color:var(--green);border-color:var(--green)}
+.steps li.done::before{content:"✓";background:var(--green);color:var(--white)}
+.panel{background:var(--white);border-radius:20px;padding:18px;box-shadow:var(--shadow)}
+.panel-title{font-size:1.05rem;margin-bottom:16px;outline:none}
+.step1-grid{display:grid;gap:22px}
+
+.cal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.cal-head b{font-family:var(--f-head);font-weight:600;font-size:1rem}
+.icon-btn{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--white);display:grid;place-items:center;font-size:1.2rem;line-height:1}
+.icon-btn:disabled{opacity:.35;cursor:not-allowed}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.cal-wd{text-align:center;font-size:.76rem;font-weight:600;color:var(--muted);padding:4px 0}
+.cal-wd:nth-child(n+6){color:#8DA0A6}
+.step1-grid>*,.booking-grid>*{min-width:0}
+.day{position:relative;aspect-ratio:1/1;min-width:0;border-radius:12px;border:1px solid transparent;background:transparent;font-weight:600;font-size:.98rem;display:grid;place-items:center;padding:0}
+.day:disabled{color:#AAB8BC;cursor:default;font-weight:400}
+.day.has{background:var(--green-soft);color:var(--ink)}
+.day.has::after{content:"";position:absolute;bottom:6px;left:50%;width:5px;height:5px;margin-left:-2.5px;border-radius:50%;background:var(--green)}
+.day.has:hover{border-color:var(--green)}
+.day.today{border-color:var(--line)}
+.day[aria-pressed="true"]{background:var(--petrol);color:var(--white)}
+.day[aria-pressed="true"]::after{background:var(--amber)}
+.cal-legend{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:12px;font-size:.8rem;color:var(--muted)}
+.cal-legend i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--green);margin-right:6px;vertical-align:middle}
+.cal-legend i.off{background:#C6D0D3}
+
+.times-title{font-weight:600;margin-bottom:12px}
+.times-title span{display:block;font-weight:400;font-size:.88rem;color:var(--muted)}
+.times-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:8px}
+.slot{min-height:52px;border-radius:12px;border:2px solid var(--green);background:var(--white);color:var(--green);font-weight:700;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.2;padding:6px}
+.slot small{font-weight:500;font-size:.74rem;color:var(--muted)}
+.slot:hover:not(:disabled){background:var(--green-soft)}
+.slot[aria-pressed="true"]{background:var(--green);color:var(--white)}
+.slot[aria-pressed="true"] small{color:#D5EDE2}
+.slot:disabled{border-color:var(--line);color:#A3B1B5;background:#F3F5F5;text-decoration:line-through;cursor:not-allowed}
+.slot:disabled small{text-decoration:none}
+.empty{padding:18px;border:1px dashed var(--line);border-radius:12px;color:var(--muted);font-size:.95rem}
+
+.step-foot{display:flex;flex-direction:column;gap:12px;margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}
+.pick{font-size:.95rem;color:var(--muted)}
+.pick b{color:var(--ink)}
+
+/* Форма */
+.form{display:grid;gap:16px}
+.field label,.field .label{display:block;font-weight:600;font-size:.95rem;margin-bottom:6px}
+.field label small{font-weight:400;color:var(--muted)}
+.input{width:100%;min-height:50px;padding:12px 14px;border-radius:12px;border:1.5px solid #B9C8C4;background:var(--white);font-size:1rem}
+textarea.input{min-height:110px;resize:vertical}
+select.input{appearance:none;background:var(--white) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 8l5 5 5-5' fill='none' stroke='%2310303A' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") right 14px center/18px no-repeat;padding-right:40px}
+.input:focus{outline:none;border-color:var(--petrol);box-shadow:0 0 0 3px rgba(240,177,58,.55)}
+.input[aria-invalid="true"]{border-color:var(--danger);background:#FFF8F7}
+.err{color:var(--danger);font-size:.88rem;margin-top:6px}
+.err:empty{display:none}
+.check{display:flex;gap:12px;align-items:flex-start;font-size:.93rem;cursor:pointer}
+.check input{width:24px;height:24px;flex:none;margin:1px 0 0;accent-color:var(--petrol)}
+.form-actions{display:flex;flex-direction:column-reverse;gap:8px;margin-top:6px}
+
+/* Итог */
+.summary{display:grid;gap:0;margin:0 0 18px;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.summary div{display:grid;grid-template-columns:minmax(110px,38%) 1fr;gap:12px;padding:12px 14px;border-bottom:1px solid var(--line)}
+.summary div:last-child{border-bottom:none}
+.summary dt{color:var(--muted);font-size:.9rem}
+.summary dd{margin:0;font-weight:600;word-break:break-word}
+.summary .total{background:var(--bg)}
+.summary .total dd{font-family:var(--f-head);font-size:1.2rem}
+.pay-actions{display:grid;gap:10px}
+.notice{border-radius:12px;padding:14px 16px;font-size:.93rem;margin-top:14px}
+.notice-demo{background:#FFF5DF;border:1px solid #F3D59A}
+.notice-ok{background:var(--green-soft);border:1px solid #B5DCC8}
+.notice-warn{background:#FFF0EE;border:1px solid #F0C3BD}
+.next-steps{margin:18px 0 0;padding-left:20px;color:var(--muted);font-size:.93rem;display:grid;gap:6px}
+.secure{display:flex;gap:8px;align-items:center;font-size:.83rem;color:var(--muted);margin-top:12px}
+
+/* FAQ */
+.faq{display:grid;gap:10px;max-width:820px}
+.faq details{background:var(--white);border:1px solid var(--line);border-radius:14px}
+.faq summary{list-style:none;cursor:pointer;padding:16px 52px 16px 18px;font-weight:600;position:relative;min-height:44px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);font-size:1.4rem;font-weight:400;color:var(--green)}
+.faq details[open] summary::after{content:"−"}
+.faq .ans{padding:0 18px 18px;color:var(--muted)}
+
+/* Подвал */
+footer{background:var(--petrol);color:#CFE0DA;padding:44px 0 32px}
+footer h2{color:var(--white);font-size:1.3rem}
+footer p{margin-top:8px}
+.contacts{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.contacts .btn{color:var(--white);border-color:rgba(255,255,255,.3)}
+.contacts .btn:hover{border-color:var(--white)}
+.fine{margin-top:32px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);font-size:.82rem;color:#88A6A0}
+
+/* Планшет и десктоп */
+@media (min-width:640px){
+  .outcomes{grid-template-columns:1fr 1fr}
+  .formats{grid-template-columns:1fr 1fr}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .form-actions,.step-foot{flex-direction:row;align-items:center;justify-content:space-between}
+  .pay-actions{grid-template-columns:1fr 1fr}
+  .panel{padding:26px}
+}
+@media (max-width:639px){
+  .form-row{display:grid;gap:16px}
+  .panel{padding:14px}
+  .cal-grid{gap:2px}
+}
+@media (max-width:420px){.panel{margin:0 -8px}}
+@media (min-width:900px){
+  section{padding:80px 0}
+  .hero{padding-bottom:80px}
+  .hero-grid{grid-template-columns:1.25fr 1fr;align-items:center;gap:56px;margin-top:48px}
+  .outcomes{grid-template-columns:repeat(3,1fr)}
+  .step1-grid{grid-template-columns:minmax(300px,1.1fr) 1fr;gap:36px}
+  .booking-grid{display:grid;grid-template-columns:320px 1fr;gap:32px;align-items:start}
+  .fmt-switch{grid-template-columns:1fr;position:sticky;top:20px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand"><b id="expertName"></b><span id="expertRole"></span></div>
+      <a class="btn btn-primary" href="#booking">Записаться</a>
+    </div>
+    <div class="hero-grid">
+      <div>
+        <span class="kicker">Консультация по финансированию</span>
+        <h1>Узнайте, где взять деньги на ваш бизнес и как их получить</h1>
+        <p class="hero-sub">За одну встречу разберём вашу идею или действующий бизнес, подберём подходящие виды финансирования и покажем, как усилить проект, чтобы повысить шансы на успех.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#booking">Выбрать дату и время</a>
+          <a class="btn btn-ghost" href="#formats">Онлайн или офлайн</a>
+        </div>
+        <ul class="hero-facts" id="heroFacts"></ul>
+      </div>
+      <aside class="nearest" aria-labelledby="nearestTitle">
+        <div class="nearest-head">
+          <div class="nearest-title" id="nearestTitle"><span class="pulse" aria-hidden="true"></span>Ближайшее свободное время</div>
+          <div class="seg" role="group" aria-label="Формат для ближайшего времени" data-fmt-group="short"></div>
+        </div>
+        <div class="nearest-body" id="nearestBody" aria-live="polite"></div>
+        <button class="btn btn-primary btn-block" id="nearestBtn" type="button">Записаться на это время</button>
+        <p class="nearest-note" id="nearestNote"></p>
+      </aside>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="outcomes" aria-labelledby="outcomesTitle">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Что вы получите</span>
+        <h2 id="outcomesTitle">Понятный план, как привлечь деньги в ваш проект</h2>
+        <p>Подходит и тем, у кого пока есть только идея, и владельцам действующего бизнеса, которые хотят привлечь финансирование или масштабироваться.</p>
+      </div>
+      <ol class="outcomes" id="outcomesList"></ol>
+    </div>
+  </section>
+
+  <section id="formats" aria-labelledby="formatsTitle" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Форматы и стоимость</span>
+        <h2 id="formatsTitle">Онлайн или вживую в Астане</h2>
+        <p>Оплата онлайн заранее. Ссылка на видеозвонок или точный адрес приходят после оплаты.</p>
+      </div>
+      <div class="formats" id="formatCards"></div>
+    </div>
+  </section>
+
+  <section id="booking" class="booking" aria-labelledby="bookingTitle">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Запись</span>
+        <h2 id="bookingTitle">Выберите удобное время</h2>
+        <p id="tzNote"></p>
+      </div>
+      <div class="booking-grid">
+        <div class="fmt-switch" role="group" aria-label="Формат консультации" data-fmt-group="full"></div>
+        <div>
+          <ol class="steps" id="steps">
+            <li>Время</li>
+            <li>Контакты</li>
+            <li>Оплата</li>
+          </ol>
+
+          <!-- Шаг 1 -->
+          <div class="panel" id="step1">
+            <h3 class="panel-title" tabindex="-1">Шаг 1. Дата и время</h3>
+            <div class="step1-grid">
+              <div>
+                <div class="cal-head">
+                  <button class="icon-btn" type="button" id="calPrev" aria-label="Предыдущий месяц">‹</button>
+                  <b id="calTitle" aria-live="polite"></b>
+                  <button class="icon-btn" type="button" id="calNext" aria-label="Следующий месяц">›</button>
+                </div>
+                <div class="cal-grid" id="calGrid"></div>
+                <div class="cal-legend"><span><i></i>есть свободное время</span><span><i class="off"></i>нет записи</span></div>
+              </div>
+              <div>
+                <p class="times-title" id="timesTitle"></p>
+                <div class="times-grid" id="timesGrid"></div>
+              </div>
+            </div>
+            <div class="step-foot">
+              <p class="pick" id="pick1" aria-live="polite"></p>
+              <button class="btn btn-primary" type="button" id="toStep2" disabled>Далее: контакты</button>
+            </div>
+          </div>
+
+          <!-- Шаг 2 -->
+          <div class="panel" id="step2" hidden>
+            <h3 class="panel-title" tabindex="-1">Шаг 2. Ваши контакты</h3>
+            <p class="pick" id="pick2" style="margin-bottom:18px"></p>
+            <form class="form" id="form" novalidate>
+              <div class="form-row">
+                <div class="field">
+                  <label for="fName">Имя</label>
+                  <input class="input" id="fName" name="name" autocomplete="name" aria-describedby="eName" required>
+                  <p class="err" id="eName" aria-live="polite"></p>
+                </div>
+                <div class="field">
+                  <label for="fPhone">Телефон <small>(WhatsApp)</small></label>
+                  <input class="input" id="fPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 700 000 00 00" aria-describedby="ePhone" required>
+                  <p class="err" id="ePhone" aria-live="polite"></p>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="field">
+                  <label for="fEmail">Email</label>
+                  <input class="input" id="fEmail" name="email" type="email" inputmode="email" autocomplete="email" placeholder="name@mail.kz" aria-describedby="eEmail" required>
+                  <p class="err" id="eEmail" aria-live="polite"></p>
+                </div>
+                <div class="field">
+                  <label for="fStage">Стадия проекта</label>
+                  <select class="input" id="fStage" name="stage" aria-describedby="eStage" required></select>
+                  <p class="err" id="eStage" aria-live="polite"></p>
+                </div>
+              </div>
+              <div class="field">
+                <label for="fDesc">Коротко о проекте <small>(необязательно)</small></label>
+                <textarea class="input" id="fDesc" name="description" maxlength="1500" placeholder="Чем занимаетесь или что хотите запустить, сколько денег нужно и на что"></textarea>
+              </div>
+              <div class="field">
+                <label class="check"><input type="checkbox" id="fConsent" name="consent" aria-describedby="eConsent"> <span id="consentText"></span></label>
+                <p class="err" id="eConsent" aria-live="polite"></p>
+              </div>
+              <div class="form-actions">
+                <button class="btn-link" type="button" data-go="1">← Изменить время</button>
+                <button class="btn btn-primary" type="submit">Далее: оплата</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Шаг 3 -->
+          <div class="panel" id="step3" hidden>
+            <h3 class="panel-title" tabindex="-1">Шаг 3. Проверьте и оплатите</h3>
+            <dl class="summary" id="summary"></dl>
+            <div class="pay-actions">
+              <button class="btn btn-primary" type="button" id="payBtn"></button>
+              <button class="btn btn-outline" type="button" id="icsBtn">Добавить напоминание в календарь</button>
+            </div>
+            <div id="payNotice" aria-live="polite"></div>
+            <div id="sendNotice" aria-live="polite"></div>
+            <ol class="next-steps" id="nextSteps"></ol>
+            <p class="secure"><span aria-hidden="true">🔒</span> Оплата проходит на защищённой странице платёжного сервиса. Сайт не получает и не хранит данные вашей карты.</p>
+            <div class="form-actions" style="margin-top:14px">
+              <button class="btn-link" type="button" data-go="2">← Изменить данные</button>
+              <button class="btn-link" type="button" id="newBooking">Новая запись</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" aria-labelledby="faqTitle">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Вопросы</span>
+        <h2 id="faqTitle">Частые вопросы</h2>
+      </div>
+      <div class="faq" id="faqList"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <h2>Остались вопросы?</h2>
+    <p>Напишите удобным способом — отвечу и помогу выбрать формат.</p>
+    <div class="contacts" id="contacts"></div>
+    <p class="fine" id="fine"></p>
+  </div>
+</footer>
+
+<script>
+/* =====================================================================
+   НАСТРОЙКИ САЙТА. Меняйте значения здесь — остальной код трогать не нужно.
+   ===================================================================== */
+const CFG = {
+  expert: {
+    name: "Имя Фамилия",                         // TODO: имя эксперта
+    role: "Эксперт по привлечению финансирования",
+    whatsapp: "77000000000",                      // номер без +, пробелов и скобок
+    telegram: "username",                         // ник без @
+    email: "hello@example.com"
+  },
+  privacyUrl: "",            // ссылка на политику конфиденциальности (если есть)
+  tz: "+05:00",              // часовой пояс эксперта (Астана)
+  tzLabel: "Астана, UTC+5",
+  slotStepMin: 60,           // шаг сетки, минут
+  leadHours: 12,             // запись не позднее чем за N часов до начала
+  horizonDays: 45,           // на сколько дней вперёд открыт календарь
+  holdMinutes: 120,          // сколько минут время держится заблокированным в браузере после заявки
+
+  // Рабочие часы по дням недели. null — выходной.
+  schedule: {
+    mon: ["10:00", "18:00"],
+    tue: ["10:00", "18:00"],
+    wed: ["10:00", "18:00"],
+    thu: ["10:00", "18:00"],
+    fri: ["10:00", "17:00"],
+    sat: ["11:00", "15:00"],
+    sun: null
+  },
+  breaks: [["13:00", "14:00"]],  // ежедневные перерывы
+
+  // Занятое время вручную. Варианты записи:
+  //   { date: "2026-10-12", from: "10:00", to: "12:00" }  — часть дня (время эксперта)
+  //   { date: "2026-10-20" }                               — весь день
+  //   { start: "2026-10-14T15:00", end: "2026-10-14T16:30" } — ISO; без смещения считается временем эксперта
+  busy: [
+    // { date: "2026-10-07", from: "10:00", to: "12:00" }
+  ],
+  // Адрес, который отдаёт JSON с занятым временем: массив объектов как выше,
+  // объект { busy: [...] } или ответ Google Calendar freeBusy ({ calendars: { id: { busy: [...] } } }).
+  busyUrl: "",
+
+  // Куда отправлять заявки (Make, Zapier, n8n, Google Apps Script). Пусто — не отправлять.
+  // Данные уходят POST-запросом, тело — JSON (Content-Type: text/plain, чтобы не было CORS-preflight).
+  webhookUrl: "",
+
+  // Платёжные ссылки. Пусто — демо-режим. В ссылке можно использовать {ref} — номер заявки.
+  payment: {
+    online: "",
+    offline: ""
+  },
+
+  formats: {
+    online: {
+      title: "Онлайн-консультация",
+      short: "Онлайн",
+      badge: "Из любого города",
+      duration: 60,
+      price: 35000,
+      place: "Видеозвонок, ссылка приходит после оплаты",
+      placeIcs: "Онлайн: ссылка на видеозвонок придёт после оплаты",
+      includes: [
+        "Видеозвонок в удобном мессенджере, ссылка приходит после оплаты",
+        "Разбор идеи или бизнеса и подбор видов финансирования",
+        "Анализ опыта, навыков, сильных и слабых сторон",
+        "Рекомендации, как усилить проект и повысить шансы на успех",
+        "Рассказ о вариантах дальнейшего сопровождения",
+        "Краткое письменное резюме с ближайшими шагами"
+      ]
+    },
+    offline: {
+      title: "Консультация вживую",
+      short: "Офлайн",
+      badge: "г. Астана",
+      duration: 90,
+      price: 50000,
+      place: "г. Астана, точный адрес приходит после оплаты",
+      placeIcs: "г. Астана (точный адрес придёт после оплаты)",
+      includes: [
+        "Личная встреча в офисе в Астане",
+        "Разбор идеи или бизнеса и подбор видов финансирования",
+        "Анализ опыта, навыков, сильных и слабых сторон",
+        "Рекомендации, как усилить проект и повысить шансы на успех",
+        "Рассказ о вариантах дальнейшего сопровождения",
+        "Больше времени на вопросы и разбор документов, которые вы приносите с собой"
+      ]
+    }
+  },
+
+  stages: [
+    "Есть только идея",
+    "Готовлюсь к запуску",
+    "Бизнес работает меньше года",
+    "Бизнес работает больше года",
+    "Хочу масштабировать бизнес"
+  ],
+
+  outcomes: [
+    { t: "Виды финансирования", d: "Какие источники денег подходят именно вашей идее или бизнесу: гранты, госпрограммы, кредиты, инвесторы и другие." },
+    { t: "Разбор опыта и навыков", d: "Оценим ваш опыт, потенциал и навыки — то, на что смотрят те, кто даёт деньги." },
+    { t: "Сильные и слабые стороны", d: "Честно определим сильные и слабые стороны — ваши и проекта." },
+    { t: "Как усилить проект", d: "Конкретные шаги, которые повысят шансы получить финансирование и добиться успеха." },
+    { t: "Варианты сопровождения", d: "Расскажу, как можно продолжить работу, если понадобится помощь на следующих этапах." }
+  ],
+
+  faq: [
+    { q: "Когда придёт подтверждение и напоминание?",
+      a: "Сразу после оплаты вы получите письмо или сообщение в WhatsApp с деталями встречи: ссылкой на видеозвонок или адресом. Напоминание можно добавить в календарь телефона на последнем шаге записи — оно сработает за сутки и за час до консультации." },
+    { q: "Можно ли перенести консультацию?",
+      a: "Да, если написать не позднее чем за 24 часа до встречи. Перенос согласуется в WhatsApp или Telegram — контакты внизу страницы." },
+    { q: "Что подготовить к консультации?",
+      a: "Коротко опишите идею или бизнес, сколько денег нужно и на что. Если есть бизнес-план, финансовые показатели или презентация — возьмите их с собой или пришлите заранее. Чем больше конкретики, тем точнее рекомендации." },
+    { q: "Подойдёт ли консультация, если у меня пока только идея?",
+      a: "Да. На консультации разберём, какие виды финансирования доступны на старте, что нужно подготовить и как упаковать идею, чтобы повысить шансы получить деньги." }
+  ]
+};
+</script>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ---------- Утилиты ---------- */
+  const MIN = 60000, DAY = 86400000;
+  const DOW_KEYS = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+  const MONTHS = ["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"];
+  const MONTHS_GEN = ["января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря"];
+  const WD_SHORT = ["Вс","Пн","Вт","Ср","Чт","Пт","Сб"];
+  const WD_FULL = ["воскресенье","понедельник","вторник","среда","четверг","пятница","суббота"];
+
+  const $ = (s, r) => (r || document).querySelector(s);
+  const $$ = (s, r) => Array.from((r || document).querySelectorAll(s));
+  const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const pad = (n) => String(n).padStart(2, "0");
+  const money = (n) => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, "\u00A0") + "\u00A0₸";
+  const hm = (s) => { const [h, m] = String(s).split(":").map(Number); return h * 60 + (m || 0); };
+  const fmtMin = (m) => pad(Math.floor(m / 60)) + ":" + pad(m % 60);
+  const reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const scrollToEl = (el) => el && el.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
+
+  const OFF = (() => {
+    const m = /^([+-])(\d{2}):?(\d{2})$/.exec(CFG.tz || "+00:00");
+    return m ? (m[1] === "-" ? -1 : 1) * (+m[2] * 60 + +m[3]) : 0;
+  })();
+
+  // Части даты в часовом поясе эксперта
+  function parts(ms) {
+    const d = new Date(ms + OFF * MIN);
+    return { y: d.getUTCFullYear(), m: d.getUTCMonth(), d: d.getUTCDate(), dow: d.getUTCDay(), min: d.getUTCHours() * 60 + d.getUTCMinutes() };
+  }
+  // Абсолютное время (мс) для даты и минут от полуночи по времени эксперта
+  const absOf = (y, m, d, min) => Date.UTC(y, m, d) + (min - OFF) * MIN;
+  const keyOf = (y, m, d) => { const t = new Date(Date.UTC(y, m, d)); return t.getUTCFullYear() + "-" + pad(t.getUTCMonth() + 1) + "-" + pad(t.getUTCDate()); };
+  const fromKey = (k) => { const [y, m, d] = k.split("-").map(Number); return { y, m: m - 1, d }; };
+  const dowOf = (y, m, d) => new Date(Date.UTC(y, m, d)).getUTCDay();
+  const todayUTC = () => { const t = parts(Date.now()); return Date.UTC(t.y, t.m, t.d); };
+  const dayIndex = (y, m, d) => Math.round((Date.UTC(y, m, d) - todayUTC()) / DAY);
+
+  function dateLabel(k, withWd) {
+    const { y, m, d } = fromKey(k);
+    const wd = WD_FULL[dowOf(y, m, d)];
+    return (withWd ? wd.charAt(0).toUpperCase() + wd.slice(1) + ", " : "") + d + " " + MONTHS_GEN[m];
+  }
+  function dateShort(k) {
+    const { y, m, d } = fromKey(k);
+    return WD_SHORT[dowOf(y, m, d)] + ", " + d + " " + MONTHS_GEN[m];
+  }
+
+  /* ---------- Занятое время ---------- */
+  function toMs(v) {
+    if (typeof v === "number") return v;
+    if (typeof v !== "string") return null;
+    let s = v.trim();
+    if (/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2}(\.\d+)?)?$/.test(s)) s += CFG.tz; // без смещения — время эксперта
+    const t = Date.parse(s);
+    return isNaN(t) ? null : t;
+  }
+  function normBusy(it) {
+    if (!it || typeof it !== "object") return null;
+    if (it.date && /^\d{4}-\d{2}-\d{2}$/.test(it.date)) {
+      const { y, m, d } = fromKey(it.date);
+      return [absOf(y, m, d, it.from ? hm(it.from) : 0), absOf(y, m, d, it.to ? hm(it.to) : 1440)];
+    }
+    const s = toMs(it.start), e = toMs(it.end);
+    return s != null && e != null && e > s ? [s, e] : null;
+  }
+  function extractBusy(data) {
+    if (Array.isArray(data)) return data;
+    if (data && Array.isArray(data.busy)) return data.busy;
+    if (data && data.calendars) return Object.values(data.calendars).flatMap((c) => (c && c.busy) || []);
+    return [];
+  }
+
+  const HOLD_KEY = "konsultaciya_holds_v1";
+  let memHolds = []; // запасной вариант, если localStorage недоступен (приватный режим и т. п.)
+  function loadHolds() {
+    let a = memHolds;
+    try {
+      const v = JSON.parse(localStorage.getItem(HOLD_KEY) || "null");
+      if (Array.isArray(v)) a = v;
+    } catch (e) { /* хранилище недоступно */ }
+    return a.filter((h) => h && h.exp > Date.now());
+  }
+  function saveHolds(a) {
+    memHolds = a;
+    try { localStorage.setItem(HOLD_KEY, JSON.stringify(a)); } catch (err) { /* хранилище недоступно */ }
+  }
+  function addHold(s, e) {
+    saveHolds(loadHolds().concat({ s, e, exp: Date.now() + (CFG.holdMinutes || 120) * MIN }));
+  }
+  function removeHold(s, e) {
+    saveHolds(loadHolds().filter((h) => !(h.s === s && h.e === e)));
+  }
+
+  const S = {
+    format: "online",
+    cfgBusy: (CFG.busy || []).map(normBusy).filter(Boolean),
+    remoteBusy: [],
+    viewY: 0, viewM: 0,
+    day: null,       // "YYYY-MM-DD"
+    slot: null,      // минуты от полуночи
+    step: 1,
+    booking: null
+  };
+  const allBusy = () => S.cfgBusy.concat(S.remoteBusy, loadHolds().map((h) => [h.s, h.e]));
+
+  /* ---------- Расчёт свободного времени ---------- */
+  function slotsForDay(k, fmt, busy) {
+    const { y, m, d } = fromKey(k);
+    const idx = dayIndex(y, m, d);
+    if (idx < 0 || idx > CFG.horizonDays) return [];
+    const sch = CFG.schedule[DOW_KEYS[dowOf(y, m, d)]];
+    if (!sch) return [];
+    const dur = CFG.formats[fmt].duration;
+    const open = hm(sch[0]), close = hm(sch[1]);
+    const brk = (CFG.breaks || []).map((b) => [hm(b[0]), hm(b[1])]);
+    const minStart = Date.now() + CFG.leadHours * 3600000;
+    const out = [];
+    for (let t = open; t + dur <= close; t += CFG.slotStepMin) {
+      const e = t + dur;
+      if (brk.some(([a, b]) => t < b && e > a)) continue;
+      const s = absOf(y, m, d, t), se = absOf(y, m, d, e);
+      if (s < minStart) continue;
+      out.push({ start: t, end: e, s, e: se, free: !busy.some(([a, b]) => s < b && se > a) });
+    }
+    return out;
+  }
+  function horizonKeys() {
+    const t = parts(Date.now()), out = [];
+    for (let i = 0; i <= CFG.horizonDays; i++) out.push(keyOf(t.y, t.m, t.d + i));
+    return out;
+  }
+  function nearestSlot(fmt) {
+    const busy = allBusy();
+    for (const k of horizonKeys()) {
+      const sl = slotsForDay(k, fmt, busy).find((x) => x.free);
+      if (sl) return { day: k, slot: sl };
+    }
+    return null;
+  }
+  function currentSlot() {
+    if (!S.day || S.slot == null) return null;
+    return slotsForDay(S.day, S.format, allBusy()).find((x) => x.start === S.slot && x.free) || null;
+  }
+
+  /* ---------- Статичные блоки ---------- */
+  function renderStatic() {
+    const ex = CFG.expert, F = CFG.formats;
+    $("#expertName").textContent = ex.name;
+    $("#expertRole").textContent = ex.role;
+    $("#heroFacts").innerHTML = [
+      "Онлайн " + F.online.duration + " мин — " + money(F.online.price),
+      "Вживую в Астане " + F.offline.duration + " мин — " + money(F.offline.price),
+      "Напоминание за сутки и за час"
+    ].map((t) => "<li>" + esc(t) + "</li>").join("");
+
+    $("#outcomesList").innerHTML = CFG.outcomes.map((o) => "<li><b>" + esc(o.t) + "</b><span>" + esc(o.d) + "</span></li>").join("");
+
+    $("#formatCards").innerHTML = Object.keys(F).map((k) => {
+      const f = F[k];
+      return '<article class="fcard' + (k === "offline" ? " is-featured" : "") + '">' +
+        '<div class="fcard-top"><div><h3>' + esc(f.title) + '</h3><p class="fcard-meta">' + esc(f.duration) + " минут · " + esc(f.place) + '</p></div><span class="badge">' + esc(f.badge) + "</span></div>" +
+        '<p class="price">' + esc(money(f.price)) + "<small>оплата заранее</small></p>" +
+        '<ul class="incl">' + f.includes.map((i) => "<li>" + esc(i) + "</li>").join("") + "</ul>" +
+        '<button class="btn ' + (k === "offline" ? "btn-primary" : "btn-outline") + '" type="button" data-book="' + esc(k) + '">Записаться</button>' +
+        "</article>";
+    }).join("");
+
+    $$('[data-fmt-group="short"]').forEach((g) => {
+      g.innerHTML = Object.keys(F).map((k) => '<button type="button" data-fmt="' + esc(k) + '">' + esc(F[k].short) + "</button>").join("");
+    });
+    $$('[data-fmt-group="full"]').forEach((g) => {
+      g.innerHTML = Object.keys(F).map((k) => '<button type="button" data-fmt="' + esc(k) + '"><b>' + esc(F[k].title) + "</b><span>" + esc(F[k].duration) + " мин · " + esc(money(F[k].price)) + "</span></button>").join("");
+    });
+
+    $("#tzNote").textContent = "Время указано по Астане (" + CFG.tzLabel + "). Запись открыта на " + CFG.horizonDays + " дней вперёд, не позднее чем за " + CFG.leadHours + " часов до начала.";
+
+    $("#fStage").innerHTML = '<option value="">Выберите вариант</option>' + CFG.stages.map((s) => "<option>" + esc(s) + "</option>").join("");
+    const pol = CFG.privacyUrl ? '<a href="' + esc(CFG.privacyUrl) + '" target="_blank" rel="noopener">обработку персональных данных</a>' : "обработку персональных данных";
+    $("#consentText").innerHTML = "Я согласен(на) на " + pol + " для записи на консультацию";
+
+    $("#faqList").innerHTML = CFG.faq.map((f) => "<details><summary>" + esc(f.q) + '</summary><p class="ans">' + esc(f.a) + "</p></details>").join("");
+
+    const wa = "https://wa.me/" + encodeURIComponent(String(ex.whatsapp).replace(/\D/g, ""));
+    $("#contacts").innerHTML =
+      '<a class="btn btn-ghost" href="' + esc(wa) + '" target="_blank" rel="noopener">WhatsApp</a>' +
+      '<a class="btn btn-ghost" href="https://t.me/' + esc(encodeURIComponent(ex.telegram)) + '" target="_blank" rel="noopener">Telegram</a>' +
+      '<a class="btn btn-ghost" href="mailto:' + esc(ex.email) + '">' + esc(ex.email) + "</a>";
+    $("#fine").textContent = "© " + new Date().getFullYear() + " " + ex.name + " · " + ex.role + ". Оплата проходит на стороне платёжного сервиса.";
+  }
+
+  /* ---------- Динамика ---------- */
+  function renderFormatToggles() {
+    $$("[data-fmt]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.fmt === S.format)));
+  }
+
+  function renderNearest() {
+    const n = nearestSlot(S.format), f = CFG.formats[S.format];
+    const body = $("#nearestBody"), btn = $("#nearestBtn");
+    if (!n) {
+      body.innerHTML = '<p class="nearest-date">Свободного времени нет</p><p class="nearest-time">Напишите в WhatsApp — подберём время вне расписания.</p>';
+      btn.hidden = true;
+    } else {
+      body.innerHTML = '<p class="nearest-date">' + esc(dateLabel(n.day, true)) + "</p>" +
+        '<p class="nearest-time"><strong>' + esc(fmtMin(n.slot.start)) + "–" + esc(fmtMin(n.slot.end)) + "</strong><span>" + esc(f.title) + "</span><span>" + esc(money(f.price)) + "</span></p>";
+      btn.hidden = false;
+      btn.dataset.day = n.day;
+      btn.dataset.slot = n.slot.start;
+    }
+    $("#nearestNote").textContent = "Время по Астане (" + CFG.tzLabel + ")";
+  }
+
+  function monthBounds() {
+    const t = parts(Date.now());
+    const end = new Date(Date.UTC(t.y, t.m, t.d + CFG.horizonDays));
+    return { min: t.y * 12 + t.m, max: end.getUTCFullYear() * 12 + end.getUTCMonth() };
+  }
+
+  function renderCalendar() {
+    const { min, max } = monthBounds();
+    const cur = S.viewY * 12 + S.viewM;
+    $("#calTitle").textContent = MONTHS[S.viewM] + " " + S.viewY;
+    $("#calPrev").disabled = cur <= min;
+    $("#calNext").disabled = cur >= max;
+
+    const busy = allBusy();
+    const first = dowOf(S.viewY, S.viewM, 1);
+    const lead = (first + 6) % 7; // понедельник первый
+    const days = new Date(Date.UTC(S.viewY, S.viewM + 1, 0)).getUTCDate();
+    const tk = keyOf(...(() => { const t = parts(Date.now()); return [t.y, t.m, t.d]; })());
+    let html = ["Пн","Вт","Ср","Чт","Пт","Сб","Вс"].map((w) => '<div class="cal-wd" aria-hidden="true">' + w + "</div>").join("");
+    for (let i = 0; i < lead; i++) html += "<div></div>";
+    for (let d = 1; d <= days; d++) {
+      const k = keyOf(S.viewY, S.viewM, d);
+      const free = slotsForDay(k, S.format, busy).filter((x) => x.free).length;
+      const label = d + " " + MONTHS_GEN[S.viewM] + ", " + WD_FULL[dowOf(S.viewY, S.viewM, d)] + (free ? ", свободно: " + free : ", нет свободного времени");
+      const cls = "day" + (free ? " has" : "") + (k === tk ? " today" : "");
+      html += '<button type="button" class="' + cls + '" data-day="' + k + '" aria-label="' + esc(label) + '" aria-pressed="' + (k === S.day) + '"' + (free ? "" : " disabled") + ">" + d + "</button>";
+    }
+    $("#calGrid").innerHTML = html;
+  }
+
+  function renderTimes() {
+    const title = $("#timesTitle"), grid = $("#timesGrid");
+    const f = CFG.formats[S.format];
+    if (!S.day) {
+      title.innerHTML = "Время<span>Сначала выберите день в календаре</span>";
+      grid.innerHTML = '<p class="empty" style="grid-column:1/-1">Дни со свободным временем отмечены зелёной точкой.</p>';
+      return;
+    }
+    const sl = slotsForDay(S.day, S.format, allBusy());
+    title.innerHTML = esc(dateLabel(S.day, true)) + "<span>" + esc(f.title) + ", " + esc(f.duration) + " мин</span>";
+    if (!sl.some((x) => x.free)) {
+      grid.innerHTML = '<p class="empty" style="grid-column:1/-1">На этот день свободного времени нет. Выберите другой день.</p>';
+      return;
+    }
+    grid.innerHTML = sl.map((x) => {
+      const lbl = fmtMin(x.start) + "–" + fmtMin(x.end) + (x.free ? "" : ", занято");
+      return '<button type="button" class="slot" data-slot="' + x.start + '" aria-label="' + esc(lbl) + '" aria-pressed="' + (x.start === S.slot) + '"' + (x.free ? "" : " disabled") + ">" +
+        esc(fmtMin(x.start)) + "<small>" + (x.free ? "до " + esc(fmtMin(x.end)) : "занято") + "</small></button>";
+    }).join("");
+  }
+
+  function pickText() {
+    const f = CFG.formats[S.format];
+    const cs = currentSlot();
+    if (!cs) return null;
+    return "<b>" + esc(dateShort(S.day)) + " · " + esc(fmtMin(cs.start)) + "–" + esc(fmtMin(cs.end)) + "</b> · " + esc(f.short) + " · " + esc(money(f.price));
+  }
+  function renderPick() {
+    const t = pickText();
+    $("#pick1").innerHTML = t ? "Вы выбрали: " + t : "Выберите день и время";
+    $("#pick2").innerHTML = t ? t : "";
+    $("#toStep2").disabled = !t;
+  }
+
+  function renderSteps() {
+    $$("#steps li").forEach((li, i) => {
+      const n = i + 1;
+      li.classList.toggle("done", n < S.step);
+      if (n === S.step) li.setAttribute("aria-current", "step"); else li.removeAttribute("aria-current");
+    });
+    [1, 2, 3].forEach((n) => { $("#step" + n).hidden = n !== S.step; });
+  }
+
+  function renderAll() {
+    renderFormatToggles();
+    renderNearest();
+    renderCalendar();
+    renderTimes();
+    renderPick();
+    renderSteps();
+  }
+
+  function goStep(n, focus) {
+    S.step = n;
+    renderSteps();
+    if (focus !== false) {
+      const h = $("#step" + n + " .panel-title");
+      scrollToEl($("#steps"));
+      if (h) h.focus({ preventScroll: true });
+    }
+  }
+
+  /* ---------- Действия ---------- */
+  // Клиент вернулся к редактированию неоплаченной заявки — снимаем блокировку её времени
+  function cancelDraft() {
+    if (!S.booking) return;
+    removeHold(S.booking._s, S.booking._e);
+    S.booking = null;
+  }
+
+  function setFormat(fmt) {
+    if (!CFG.formats[fmt]) return;
+    if (S.step === 3 && fmt !== S.format) { cancelDraft(); S.step = 1; }
+    S.format = fmt;
+    if (S.slot != null && !currentSlot()) S.slot = null;
+    renderAll();
+  }
+
+  function selectDay(k) {
+    S.day = k;
+    const { y, m } = fromKey(k);
+    S.viewY = y; S.viewM = m;
+    if (S.slot != null && !currentSlot()) S.slot = null;
+    renderCalendar(); renderTimes(); renderPick();
+  }
+
+  function selectSlot(start) {
+    S.slot = start;
+    renderTimes(); renderPick();
+  }
+
+  function setView(y, m) { S.viewY = y; S.viewM = m; renderCalendar(); }
+
+  /* ---------- Форма ---------- */
+  const fields = {
+    name: { el: () => $("#fName"), err: "#eName", check: (v) => v.trim().length >= 2 ? "" : "Укажите имя — не короче 2 символов." },
+    phone: { el: () => $("#fPhone"), err: "#ePhone", check: (v) => {
+      const d = v.replace(/\D/g, "");
+      if (!d) return "Укажите номер телефона, на который удобно писать в WhatsApp.";
+      return d.length >= 10 && d.length <= 15 ? "" : "Номер должен содержать не меньше 10 цифр, например +7 700 123 45 67.";
+    } },
+    email: { el: () => $("#fEmail"), err: "#eEmail", check: (v) => {
+      if (!v.trim()) return "Укажите email — на него придёт подтверждение.";
+      return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim()) ? "" : "Проверьте email: он должен быть вида name@mail.kz.";
+    } },
+    stage: { el: () => $("#fStage"), err: "#eStage", check: (v) => v ? "" : "Выберите стадию проекта — так я лучше подготовлюсь к встрече." },
+    consent: { el: () => $("#fConsent"), err: "#eConsent", check: (_, el) => el.checked ? "" : "Чтобы записаться, нужно согласие на обработку персональных данных." }
+  };
+  function validateField(name) {
+    const f = fields[name], el = f.el();
+    const msg = f.check(el.value || "", el);
+    $(f.err).textContent = msg;
+    el.setAttribute("aria-invalid", String(!!msg));
+    return !msg;
+  }
+  Object.keys(fields).forEach((n) => {
+    const el = fields[n].el();
+    el.addEventListener("blur", () => { if (el.value || el.getAttribute("aria-invalid") === "true") validateField(n); });
+    el.addEventListener("input", () => { if (el.getAttribute("aria-invalid") === "true") validateField(n); });
+    el.addEventListener("change", () => { if (el.getAttribute("aria-invalid") === "true") validateField(n); });
+  });
+
+  function makeRef() {
+    const c = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+    let r = "";
+    const rnd = window.crypto && crypto.getRandomValues ? crypto.getRandomValues(new Uint8Array(4)) : [0, 0, 0, 0].map(() => Math.random() * 256);
+    for (let i = 0; i < 4; i++) r += c[rnd[i] % c.length];
+    return "K-" + S.day.replace(/-/g, "").slice(2) + "-" + r;
+  }
+
+  $("#form").addEventListener("submit", (ev) => {
+    ev.preventDefault();
+    const ok = Object.keys(fields).map(validateField);
+    if (ok.includes(false)) {
+      const firstBad = Object.keys(fields).find((n, i) => !ok[i]);
+      fields[firstBad].el().focus();
+      return;
+    }
+    const cs = currentSlot();
+    if (!cs) {
+      alert("Это время уже недоступно. Пожалуйста, выберите другое.");
+      S.slot = null; renderAll(); goStep(1);
+      return;
+    }
+    const f = CFG.formats[S.format];
+    const b = {
+      ref: makeRef(),
+      format: S.format,
+      formatTitle: f.title,
+      price: f.price,
+      currency: "KZT",
+      duration: f.duration,
+      date: S.day,
+      time: fmtMin(cs.start),
+      timezone: CFG.tz,
+      timezoneLabel: CFG.tzLabel,
+      startISO: S.day + "T" + fmtMin(cs.start) + ":00" + CFG.tz,
+      endISO: S.day + "T" + fmtMin(cs.end) + ":00" + CFG.tz,
+      name: $("#fName").value.trim(),
+      phone: $("#fPhone").value.trim(),
+      email: $("#fEmail").value.trim(),
+      stage: $("#fStage").value,
+      description: $("#fDesc").value.trim(),
+      createdAt: new Date().toISOString(),
+      _s: cs.s, _e: cs.e
+    };
+    S.booking = b;
+    addHold(cs.s, cs.e);
+    renderSummary();
+    goStep(3);
+    sendWebhook(b);
+  });
+
+  function sendWebhook(b) {
+    const box = $("#sendNotice");
+    box.innerHTML = "";
+    if (!CFG.webhookUrl) return;
+    const payload = Object.assign({}, b);
+    delete payload._s; delete payload._e;
+    fetch(CFG.webhookUrl, {
+      method: "POST",
+      mode: "no-cors",
+      keepalive: true,
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify(payload)
+    }).then(() => {
+      box.innerHTML = '<div class="notice notice-ok">Заявка ' + esc(b.ref) + " отправлена. Подтверждение придёт после оплаты.</div>";
+    }).catch(() => {
+      box.innerHTML = '<div class="notice notice-warn">Не удалось отправить заявку автоматически. После оплаты напишите, пожалуйста, в WhatsApp и укажите номер заявки ' + esc(b.ref) + ".</div>";
+    });
+  }
+
+  /* ---------- Шаг 3 ---------- */
+  function renderSummary() {
+    const b = S.booking; if (!b) return;
+    const f = CFG.formats[b.format];
+    const rows = [
+      ["Номер заявки", b.ref],
+      ["Формат", f.title],
+      ["Дата", dateLabel(b.date, true)],
+      ["Время", b.time + "–" + fmtMin(hm(b.time) + b.duration) + " (" + CFG.tzLabel + ")"],
+      ["Длительность", b.duration + " минут"],
+      ["Место", f.place],
+      ["Имя", b.name],
+      ["Телефон", b.phone],
+      ["Email", b.email]
+    ];
+    $("#summary").innerHTML = rows.map((r) => "<div><dt>" + esc(r[0]) + "</dt><dd>" + esc(r[1]) + "</dd></div>").join("") +
+      '<div class="total"><dt>К оплате</dt><dd>' + esc(money(b.price)) + "</dd></div>";
+    $("#payBtn").textContent = "Оплатить " + money(b.price);
+    $("#payNotice").innerHTML = "";
+    $("#nextSteps").innerHTML = [
+      "Нажмите «Оплатить» — откроется защищённая страница оплаты.",
+      "После оплаты придёт письмо или сообщение в WhatsApp с " + (b.format === "online" ? "ссылкой на видеозвонок." : "точным адресом встречи."),
+      "Добавьте напоминание в календарь — оно сработает за сутки и за час до встречи.",
+      "Нужно перенести? Напишите не позднее чем за 24 часа до консультации."
+    ].map((t) => "<li>" + esc(t) + "</li>").join("");
+    S.step = 3;
+    renderAll();
+  }
+
+  $("#payBtn").addEventListener("click", () => {
+    const b = S.booking; if (!b) return;
+    const link = (CFG.payment && CFG.payment[b.format]) || "";
+    if (link) {
+      const url = link.replace(/\{ref\}/g, encodeURIComponent(b.ref));
+      const w = window.open(url, "_blank", "noopener");
+      if (!w) location.href = url;
+      $("#payNotice").innerHTML = '<div class="notice notice-ok">Страница оплаты открыта в новой вкладке. Если она не открылась, <a href="' + esc(url) + '" target="_blank" rel="noopener">перейдите по ссылке</a>.</div>';
+    } else {
+      $("#payNotice").innerHTML = '<div class="notice notice-demo"><b>Демо-режим.</b> Платёжная ссылка для формата «' + esc(CFG.formats[b.format].title) + "» ещё не подключена. В рабочей версии здесь откроется страница оплаты на " + esc(money(b.price)) + ". Ссылку нужно указать в настройках <code>CFG.payment</code>.</div>";
+    }
+  });
+
+  /* ---------- Файл .ics ---------- */
+  function icsDate(ms) {
+    const d = new Date(ms);
+    return d.getUTCFullYear() + pad(d.getUTCMonth() + 1) + pad(d.getUTCDate()) + "T" + pad(d.getUTCHours()) + pad(d.getUTCMinutes()) + pad(d.getUTCSeconds()) + "Z";
+  }
+  const icsText = (s) => String(s).replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\r?\n/g, "\\n");
+  function fold(line) {
+    // Перенос строк по 75 байт (RFC 5545), с учётом UTF-8
+    let out = "", bytes = 0;
+    for (const ch of line) {
+      const cp = ch.codePointAt(0);
+      const n = cp < 0x80 ? 1 : cp < 0x800 ? 2 : cp < 0x10000 ? 3 : 4;
+      if (bytes + n > 74) { out += "\r\n "; bytes = 1; }
+      out += ch; bytes += n;
+    }
+    return out;
+  }
+  function buildIcs(b) {
+    const f = CFG.formats[b.format], ex = CFG.expert;
+    const desc = f.title + " (" + b.duration + " мин)\n" +
+      "Эксперт: " + ex.name + "\n" +
+      "Заявка: " + b.ref + "\n" +
+      (b.format === "online" ? "Ссылка на видеозвонок придёт после оплаты." : "Точный адрес придёт после оплаты.") + "\n" +
+      "Перенос — не позднее чем за 24 часа: WhatsApp +" + String(ex.whatsapp).replace(/\D/g, "");
+    const lines = [
+      "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//konsultaciya//RU", "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
+      "BEGIN:VEVENT",
+      "UID:" + b.ref + "@konsultaciya",
+      "DTSTAMP:" + icsDate(Date.now()),
+      "DTSTART:" + icsDate(b._s),
+      "DTEND:" + icsDate(b._e),
+      "SUMMARY:" + icsText("Консультация по финансированию — " + f.short.toLowerCase()),
+      "DESCRIPTION:" + icsText(desc),
+      "LOCATION:" + icsText(f.placeIcs || f.place),
+      "STATUS:CONFIRMED",
+      "BEGIN:VALARM", "ACTION:DISPLAY", "TRIGGER:-P1D", "DESCRIPTION:" + icsText("Завтра консультация по финансированию"), "END:VALARM",
+      "BEGIN:VALARM", "ACTION:DISPLAY", "TRIGGER:-PT1H", "DESCRIPTION:" + icsText("Через час консультация по финансированию"), "END:VALARM",
+      "END:VEVENT", "END:VCALENDAR"
+    ];
+    return lines.map(fold).join("\r\n") + "\r\n";
+  }
+  $("#icsBtn").addEventListener("click", () => {
+    const b = S.booking; if (!b) return;
+    const blob = new Blob([buildIcs(b)], { type: "text/calendar;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url; a.download = "konsultaciya-" + b.date + ".ics";
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 4000);
+  });
+
+  /* ---------- События ---------- */
+  document.addEventListener("click", (ev) => {
+    const t = ev.target.closest("button, a");
+    if (!t) return;
+    if (t.dataset.fmt) { setFormat(t.dataset.fmt); return; }
+    if (t.dataset.day && t.classList.contains("day")) { selectDay(t.dataset.day); return; }
+    if (t.dataset.slot && t.classList.contains("slot")) { selectSlot(+t.dataset.slot); return; }
+    if (t.dataset.book) {
+      if (S.step === 3) { cancelDraft(); S.step = 1; }
+      setFormat(t.dataset.book);
+      scrollToEl($("#booking"));
+      return;
+    }
+    if (t.dataset.go) {
+      if (S.step === 3) { cancelDraft(); renderAll(); }
+      goStep(+t.dataset.go);
+      return;
+    }
+  });
+
+  $("#nearestBtn").addEventListener("click", (ev) => {
+    const btn = ev.currentTarget;
+    if (S.step === 3) cancelDraft();
+    S.step = 1;
+    selectDay(btn.dataset.day);
+    selectSlot(+btn.dataset.slot);
+    renderSteps();
+    scrollToEl($("#booking"));
+    $("#toStep2").focus({ preventScroll: true });
+  });
+
+  $("#calPrev").addEventListener("click", () => { const d = new Date(Date.UTC(S.viewY, S.viewM - 1, 1)); setView(d.getUTCFullYear(), d.getUTCMonth()); });
+  $("#calNext").addEventListener("click", () => { const d = new Date(Date.UTC(S.viewY, S.viewM + 1, 1)); setView(d.getUTCFullYear(), d.getUTCMonth()); });
+
+  $("#toStep2").addEventListener("click", () => {
+    if (!currentSlot()) { S.slot = null; renderAll(); return; }
+    goStep(2);
+  });
+
+  $("#newBooking").addEventListener("click", () => {
+    S.booking = null; S.slot = null; S.day = null;
+    $("#form").reset();
+    $$("#form [aria-invalid]").forEach((el) => el.removeAttribute("aria-invalid"));
+    $$("#form .err").forEach((el) => { el.textContent = ""; });
+    renderAll();
+    goStep(1);
+  });
+
+  // Обновляем доступность при возвращении на вкладку (время идёт, лимит «за 12 часов» сдвигается)
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible" && S.step !== 3) {
+      if (S.slot != null && !currentSlot()) S.slot = null;
+      renderAll();
+    }
+  });
+
+  /* ---------- Старт ---------- */
+  function init() {
+    renderStatic();
+    const n = nearestSlot(S.format);
+    const v = n ? fromKey(n.day) : parts(Date.now());
+    S.viewY = v.y; S.viewM = v.m;
+    renderAll();
+
+    if (CFG.busyUrl) {
+      fetch(CFG.busyUrl, { cache: "no-store" })
+        .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then((data) => {
+          S.remoteBusy = extractBusy(data).map(normBusy).filter(Boolean);
+          if (S.step !== 3 && S.slot != null && !currentSlot()) S.slot = null;
+          renderAll();
+        })
+        .catch((e) => console.warn("Не удалось загрузить занятое время:", e));
+    }
+  }
+  init();
+})();
+</script>
+</body>
+</html>
